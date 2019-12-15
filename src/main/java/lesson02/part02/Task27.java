@@ -33,7 +33,23 @@ import java.util.*;
 
 public class Task27 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        int x;
+        Scanner scan = new Scanner(System.in);
+        System.out.print("x: ");
+        x=scan.nextInt();
+
+        if(x>0&&x%2==0&&x<10)
+        {System.out.println(" четное число");}
+        if(x>0&&x%2!=0&&x<10)
+        {System.out.println(" нечетное число");}
+        if(x>9&&x%2==0&&x<100)
+        {System.out.println(" четное число");}
+        if(x>9&&x%2!=0&&x<100)
+        {System.out.println(" нечетное число");}
+        if(x>9&&x%2==0&&x<100)
+        {System.out.println(" четное число");}
+        if(x>9&&x%2!=0&&x<100)
+        {System.out.println(" нечетное число");}
 
     }
 }

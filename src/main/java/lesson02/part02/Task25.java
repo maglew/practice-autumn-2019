@@ -29,7 +29,20 @@ import java.util.*;
 
 public class Task25 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
-
+        int x;
+        int y;
+        Scanner scan = new Scanner(System.in);
+        System.out.print("x: ");
+        x=scan.nextInt();
+        System.out.print("y: ");
+        y=scan.nextInt();
+        if(x>0 && y>0)
+        {System.out.print("1");}
+        if(x<0 && y>0)
+        {System.out.print("2");}
+        if(x<0 && y<0)
+        {System.out.print("3");}
+        if(x>0 && y<0)
+        {System.out.print("4");}
     }
 }

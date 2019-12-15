@@ -1,5 +1,7 @@
 package lesson02.part02;
 
+import java.util.Scanner;
+
 /**
  * Ввести с клавиатуры три целых числа. Вывести на экран количество положительных и количество отрицательных чисел в исходном наборе,
  * в следующем виде:
@@ -35,7 +37,31 @@ package lesson02.part02;
 
 public class Task29 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
-
+        int a;
+        int b;
+        int c;
+        int n=0;
+        int m=0;
+        Scanner scan = new Scanner(System.in);
+        System.out.print("a: ");
+        a=scan.nextInt();
+        System.out.print("b: ");
+        b=scan.nextInt();
+        System.out.print("c: ");
+        c=scan.nextInt();
+        if(a>0)
+            n++;
+        if(b>0)
+            n++;
+        if(c>0)
+            n++;
+        System.out.println("количество положительных чисел:"+n);
+        if(a<0)
+            m++;
+        if(b<0)
+            m++;
+        if(c<0)
+            m++;
+        System.out.println("количество отрицательных чисел:"+m);
     }
 }

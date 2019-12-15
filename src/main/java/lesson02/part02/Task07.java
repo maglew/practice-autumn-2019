@@ -26,5 +26,10 @@ public class Task07 {
 
     public static class Cat {
         public static int count = 0;
+
+        public Cat()
+        {
+            Cat.count++;
+        }
     }
 }

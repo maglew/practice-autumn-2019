@@ -1,5 +1,7 @@
 package lesson02.part02;
 
+import java.util.Scanner;
+
 /**
  * Ввести с клавиатуры три числа, вывести на экран среднее из них. Т.е. не самое большое и не самое маленькое.
  * Если все числа равны, вывести любое из них.
@@ -15,7 +17,28 @@ package lesson02.part02;
 
 public class Task41 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
-
+        int a;
+        int b;
+        int c;
+        int med;
+        Scanner scan = new Scanner(System.in);
+        System.out.print("a: ");
+        a=scan.nextInt();
+        System.out.print("b: ");
+        b=scan.nextInt();
+        System.out.print("c: ");
+        c=scan.nextInt();
+      if((a>b&&c<b)||(a<b&&c>b))
+          System.out.print(b);
+          if((a>c&&b<c)||(a<c&&b>c))
+              System.out.print(c);
+              if((b>a&&c<a)||(b<a&&c>a))
+                  System.out.print(a);
+              else if(a==b||a==c)
+        System.out.print(a);
+               else if(b==c||a==c)
+        System.out.print(c);
+              else if(b==c||a==b)
+                  System.out.print(c);
     }
 }
